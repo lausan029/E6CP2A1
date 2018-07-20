@@ -5,3 +5,14 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+
+def incluye(cad, car)
+	if car.include? cad
+		puts true
+	else
+		puts false
+	end
+end
+
+incluye(cadena,caracter)

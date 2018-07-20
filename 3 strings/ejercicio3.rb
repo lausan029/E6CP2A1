@@ -6,3 +6,22 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+# 1. La concatenación de a y b.
+arr = a + b
+puts arr
+
+# 2. La unión de a y b.
+arr = a | b
+puts arr
+
+# 3. La intersección de a y b.
+arr = a & b
+puts arr
+	
+# 4. Intercalar los elementos
+
+tam = a.count + b.count
+new_arr = Array.new()
+tam.times do |i|
+

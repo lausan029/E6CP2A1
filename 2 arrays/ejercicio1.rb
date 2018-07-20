@@ -7,6 +7,22 @@
 
 arreglo = [1,2,3,9,1,4,5,2,3,6,6]
 
+puts '################'
 puts arreglo.first
+puts '################'
 puts arreglo.last
+puts '################'
 puts arreglo
+puts '################'
+tam = arreglo.length
+tam.times do |i|
+	  array = arreglo[i]
+		puts "#{array} el indice es #{i}" 
+end
+puts '################'
+arreglo.each do |i|
+	if i.even?
+		puts i
+	end
+end
+puts '################'

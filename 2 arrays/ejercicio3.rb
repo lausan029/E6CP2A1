@@ -5,3 +5,16 @@
  # 4. Crear un método que incrementa todos los elementos en una unidad y devuelva un arreglo nuevo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+
+def pares(a)
+	tam = (a.length) - 1
+	tam.times do |i|
+		resul = a[i]
+		if resul.even?
+			a.delete_at(i)
+		end
+		puts a
+	end
+end
+
+pares(a)
